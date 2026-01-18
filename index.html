@@ -122,12 +122,12 @@
 </head>
 <body>
     <header>
-        <img src="https://i.postimg.cc/VNv8vB17/Screenshot-2025-11-05-at-14-23-04.png" alt="Banner">
+        <img src="https://i.postimg.cc/X7jbhJHD/save-Newham-Libraries.png" alt="Banner">
     </header>
     <main>
-        <h1>Tell your ward councillors to Divest Now!</h1>
+        <h1>Tell your ward councillors to Save Newham Libraries!</h1>
         <div class="explanation">
-            Use this tool to find and contact your local councillors. Simply enter your postcode and name, and this tool will make ready to go emails asking for divestment to your councillors automatically. Make sure to enter your postcode in the correct format (e.g., E10 1AB). <br> <br> Tool works best on mobile.
+            Use this tool to find and contact your local councillors. Simply enter your postcode and name, and this tool will make ready to go emails asking your councillors to save the libraries automatically. Make sure to enter your postcode in the correct format (e.g., E10 1AB). <br> <br> Tool works best on mobile.
         </div>
         <form id="custom-form">
             <input type="text" id="name" placeholder="Enter your name" required>
@@ -155,7 +155,7 @@
 
             var name = $('#name').val();
             var query = $('#query').val();
-            var url = 'https://script.google.com/macros/s/AKfycbwJuUypqMEKS03odUrTc2gTWfRhpRJy-87cP8CL_C6Sp_ysGIi_wXtkGFpP6DPHbK6gZg/exec' + '?name=' + encodeURIComponent(name) + '&query=' + encodeURIComponent(query);
+            var url = 'https://script.google.com/macros/s/AKfycby00W4_akYXQsGi_D1cfRxlgbkavOqpUwRit2wvPVpTk_2tvCaQznK5Bq9uMFStRZx-/exec' + '?name=' + encodeURIComponent(name) + '&query=' + encodeURIComponent(query);
 
             // Show the modal and the loading spinner
             $('#result').html('');  // Clear previous result
@@ -169,7 +169,7 @@
                 var resultHtml = '';
 
                 if (ward === "Invalid") {
-                    resultHtml = '<div>Bad postcode - please enter in format E10 1AB</div>';
+                    resultHtml = '<div>Bad postcode - please enter in format E13 1AB</div>';
                 } else {
                     resultHtml = '<div>You live in the ' + ward + ' ward and have ' + councillors.length + ' councillors: ' + councillors.join(', ') + '</div>';
                     councillors.forEach(function(councillor, index) {
